@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url(https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 20rem;
+  height: 20rem;
+  backdrop-filter: blur(0.7rem);
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.3);
+  padding: 2rem;
+  color: white;
+  border-radius: 1rem;
+}
+
+.generate-div {
+  margin-bottom: 2rem;
+  text-align: center;
+  width: 5rem;
+  height: 3rem;
+}
+
+.generate-div .generate {
+  background: none;
+  background-color: rgb(37, 66, 160);
+  color: white;
+  border: none;
+  border-radius: 0.3rem;
+  padding: 0.4rem;
+}
+
+.generate-div .generate:hover {
+  background-color: white;
+  color: rgb(37, 66, 160);
+  border: 1px solid rgb(37, 66, 160);
+  cursor: pointer;
+}
+
+.generate-div .generate:active {
+  background-color: rgb(37, 66, 160);
+  color: white;
+}
+
+.result {
+  text-align: left;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 15rem;
+  height: 3rem;
+}
+
+.result p {
+  padding: 0 0.3rem;
+  width: 7rem;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.1rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.checked {
+  visibility: hidden;
+}
